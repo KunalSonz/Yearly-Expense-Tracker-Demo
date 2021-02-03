@@ -1,0 +1,84 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: rgb(243, 45, 253);
+  background: linear-gradient(
+    309deg,
+    rgba(243, 45, 253, 0.7150210425967262) 9%,
+    rgba(45, 196, 253, 0.6842087176667542) 71%
+  );
+}
+
+#monthDis {
+  border: 3px solid black;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+#inputSec {
+  border: 4px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+#janshowings,
+#febshowings,
+#marshowings,
+#aprshowings,
+#mayshowings,
+#junshowings,
+#julshowings,
+#augshowings,
+#sepshowings,
+#octshowings,
+#novshowings,
+#decshowings {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  /* right: 10%; */
+  border: 10px solid black;
+  border-radius: 10px;
+  width: 70%;
+  height: 70vh;
+  overflow-y: scroll;
+  display: none;
+  background: rgb(240, 128, 128);
+  background: linear-gradient(
+    104deg,
+    rgba(240, 128, 128, 0.9279061966583508) 30%,
+    rgba(253, 180, 45, 0.9335084375547094) 96%
+  );
+}
+
+#janmoney,
+#febmoney,
+#marmoney,
+#aprmoney,
+#maymoney,
+#junmoney,
+#julmoney,
+#augmoney,
+#sepmoney,
+#octmoney,
+#novmoney,
+#decmoney,
+#totmoney {
+  position: relative;
+  left: 10%;
+  z-index: -1;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  width: 60%;
+}
+
+td {
+  text-align: center;
+}

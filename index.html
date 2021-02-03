@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="inputSec">
+  <input type="text" name="money" id="money" placeholder="Enter Amount">
+  <input type="month" name="month" id="month" min="2021-01" value="">
+  <input type="date" name="date" id="date">
+  <button id="subbtn" type="submit" onclick="btnclick()">ENTER</button>  
+  </div>
+ 
+<!-- individual month display   -->
+
+  <div id="janshowings">
+    <h2>JANUARY</h2>
+    <table id="jantabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="febshowings">
+    <h2>feburary</h2>
+    <table id="febtabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="marshowings">
+    <h2>March</h2>
+    <table id="martabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="aprshowings">
+    <h2>April</h2>
+    <table id="aprtabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="mayshowings">
+    <h2>May</h2>
+    <table id="maytabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="junshowings">
+    <h2>June</h2>
+    <table id="juntabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="julshowings">
+    <h2>July</h2>
+    <table id="jultabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="augshowings">
+    <h2>August</h2>
+    <table id="augtabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="sepshowings">
+    <h2>September</h2>
+    <table id="septabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="octshowings">
+    <h2>October</h2>
+    <table id="octtabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="novshowings">
+    <h2>November</h2>
+    <table id="novtabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+  <div id="decshowings">
+    <h2>December</h2>
+    <table id="dectabdat">
+      <tr>
+        <th>AMOUNT</th>
+        <th>DATE</th>
+      </tr>
+    </table>
+    <button type="submit" onclick="closeShow()">close</button>
+  </div>
+
+
+<!-- months display -->
+
+  <div id="monthDis" class="jan">
+    <h1>JANUARY</h1>
+    <h1 id="janmoney">0</h1>
+  </div>
+  <div id="monthDis" class="feb">
+    <h1>FEBRUARY</h1>
+    <h1 id="febmoney">0</h1>
+  </div>
+  <div id="monthDis" class="mar">
+    <h1>MARCH</h1>
+    <h1 id="marmoney">0</h1>
+  </div>
+  <div id="monthDis" class="apr">
+    <h1>APRIL</h1>
+    <h1 id="aprmoney">0</h1>
+  </div>
+  <div id="monthDis" class="may">
+    <h1>MAY</h1>
+    <h1 id="maymoney">0</h1>
+  </div>
+  <div id="monthDis" class="jun">
+    <h1>JUNE</h1>
+    <h1 id="junmoney">0</h1>
+  </div>
+  <div id="monthDis" class="jul">
+    <h1>JULY</h1>
+    <h1 id="julmoney">0</h1>
+  </div>
+  <div id="monthDis" class="aug">
+    <h1>AUGUST</h1>
+    <h1 id="augmoney">0</h1>
+  </div>
+  <div id="monthDis" class="sep">
+    <h1>SEPTEMBER</h1>
+    <h1 id="sepmoney">0</h1>
+  </div>
+  <div id="monthDis" class="oct">
+    <h1>OCTOBER</h1>
+    <h1 id="octmoney">0</h1>
+  </div>
+  <div id="monthDis" class="nov">
+    <h1>NOVEMBER</h1>
+    <h1 id="novmoney">0</h1>
+  </div>
+  <div id="monthDis" class="dec">
+    <h1>DECEMBER</h1>
+    <h1 id="decmoney">0</h1>
+  </div>
+  <div id="monthDis" class="yer">
+    <h1>THIS YEAR</h1>
+    <h1 id="totmoney">0</h1>
+  </div>  
+  
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
